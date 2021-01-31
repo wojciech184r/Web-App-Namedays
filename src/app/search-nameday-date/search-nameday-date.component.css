@@ -1,0 +1,12 @@
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div label,
+  input {
+      margin-left: 10px;
+    margin-bottom: 16px;
+  }

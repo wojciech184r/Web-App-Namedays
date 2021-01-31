@@ -1,0 +1,9 @@
+<div>
+  <label for="date">Choose date</label>
+  <input id="date" type="date" [(ngModel)]="date" />
+  <button (click)="onSearch()">Search</button>
+</div>
+<div *ngIf="showContent">
+  <p>On date {{ day }}.{{ month }} namdeays in Poland are:</p>
+  <p>{{ namedaysForDate }}</p>
+</div>

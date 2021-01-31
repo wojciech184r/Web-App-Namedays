@@ -1,0 +1,10 @@
+<div>
+    <label for="name">Choose name</label>
+    <input id="name" type="text" [(ngModel)]="name"/>
+    <button (click)="onSearch()">Search</button>
+  </div>
+  <div *ngIf="showContent">
+    <p>On name {{ name }} namedays in Poland are on days:</p>
+    <p *ngFor="let date of showValue">Day ={{date.day}}, Month = {{date.month}}</p>
+    
+  

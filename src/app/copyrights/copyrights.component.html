@@ -1,0 +1,28 @@
+<label for="red-channel">Red:</label>
+<input
+  name="red-channel"
+  type="number"
+  min="0"
+  max="255"
+  [(ngModel)]="redChannel"
+/>
+
+<label for="green-channel">Green:</label>
+<input
+  name="green-channel"
+  type="number"
+  min="0"
+  max="255"
+  [(ngModel)]="greenChannel"
+/>
+
+<label for="blue-channel">Blue:</label>
+<input
+  name="blue-channel"
+  type="number"
+  min="0"
+  max="255"
+  [(ngModel)]="blueChannel"
+/>
+
+<button (click)="onAddColor()">Add color</button>
